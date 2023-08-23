@@ -37,7 +37,7 @@ async fn handler(tele: Telegram, placeholder_text: &str, system_prompt: &str, he
             restart: false,
             system_prompt: Some(system_prompt),
             temperature: Some(1.23),
-            ..chatOptions::default()
+            ..ChatOptions::default()
         };
 
         let text = msg.text().unwrap_or("");
