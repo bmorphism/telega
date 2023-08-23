@@ -36,6 +36,7 @@ async fn handler(tele: Telegram, placeholder_text: &str, system_prompt: &str, he
             // model: ChatModel::GPT35Turbo,
             restart: false,
             system_prompt: Some(system_prompt),
+            temperature: 1.23
         };
 
         let text = msg.text().unwrap_or("");
