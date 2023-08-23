@@ -32,8 +32,8 @@ async fn handler(tele: Telegram, placeholder_text: &str, system_prompt: &str, he
         let mut openai = OpenAIFlows::new();
         openai.set_retry_times(3);
         let mut co = ChatOptions {
-            // model: ChatModel::GPT4,
-            model: ChatModel::GPT35Turbo,
+            model: ChatModel::GPT4,
+            // model: ChatModel::GPT35Turbo,
             restart: false,
             system_prompt: Some(system_prompt),
         };
